@@ -1,3 +1,6 @@
+// for document embedding example only
+// use blogPostModel for db architecture model
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
