@@ -1,8 +1,9 @@
+//only used for embedded documents example
 const assert = require('assert');
 const User = require('../src/userModel');
 
 describe('Subdocuments', () => {
-  it('can create a subdocument', (done) => {
+  xit('can create a subdocument', (done) => {
     const joe = new User({
       name: 'Joe',
       posts: [{ title: 'Post Title' }]
@@ -16,7 +17,7 @@ describe('Subdocuments', () => {
       });
   });
 
-  it('can add subdocuments to an existing record', (done) => {
+  xit('can add subdocuments to an existing record', (done) => {
     const joe = new User({
       name: 'Joe',
       //joe starts off with an empty array of posts 
@@ -35,7 +36,7 @@ describe('Subdocuments', () => {
       });
   });
 
-  it('can remove an existing subdocument', (done) => {
+  xit('can remove an existing subdocument', (done) => {
     const joe = new User({
       name: 'Joe',
       posts: [{ title: 'New Post' }]
