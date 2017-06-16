@@ -2,7 +2,7 @@ const assert = require('assert');
 const User = require('../src/userModel');
 
 describe('Virtual types', () => {
-  it('postCount returns number of posts', (done) => {
+  xit('postCount returns number of posts', (done) => {
     const joe = new User({
       name: 'Joe',
       posts: [{ title: 'New Post' }]

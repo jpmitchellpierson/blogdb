@@ -2,7 +2,7 @@ const assert = require('assert');
 const User = require('../src/userModel')
 
 describe('Creating Records', () => {
-  it('Saves a user', (done) => {
+  xit('Saves a user', (done) => {
     const joe = new User({ name: 'Joe' });
 
     joe.save()

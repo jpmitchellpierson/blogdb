@@ -10,7 +10,7 @@ describe('Deleting a user', () => {
       .then(() => done());
   });
 
-  it('model instance remove', (done) => {
+  xit('model instance remove', (done) => {
     // direct reference to joe instance, not User class
     joe.remove()
       .then(() => User.findOne({ name: 'Joe' }))
@@ -20,7 +20,7 @@ describe('Deleting a user', () => {
       });
   });
 
-  it('class method remove', (done) => {
+  xit('class method remove', (done) => {
     // Remove a bunch of records with a given criteria
     User.remove({ name: 'Joe' })
       .then(() => User.findOne({ name: 'Joe' }))
@@ -30,7 +30,7 @@ describe('Deleting a user', () => {
       });
   });
 
-  it('class method findOneAndRemove', (done) => {
+  xit('class method findOneAndRemove', (done) => {
     User.findOneAndRemove({ name: 'Joe' })
       .then(() => User.findOne({ name: 'Joe' }))
       .then((user) => {
@@ -39,7 +39,7 @@ describe('Deleting a user', () => {
       });
   });
 
-  it('class method findByIdAndRemove', (done) => {
+  xit('class method findByIdAndRemove', (done) => {
     User.findByIdAndRemove(joe._id)
       .then(() => User.findOne({ name: 'Joe' }))
       .then((user) => {

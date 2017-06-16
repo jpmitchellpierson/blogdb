@@ -10,7 +10,7 @@ describe('Find user in the database', () => {
       .then(() => done());
   });
 
-  it('finds all users with a name of joe', (done) => {
+  xit('finds all users with a name of joe', (done) => {
     User.find({ name: 'Joe' })
       .then((users) => {
         assert(users[0]._id.toString() === joe._id.toString());
@@ -18,7 +18,7 @@ describe('Find user in the database', () => {
       });
   });
 
-  it('Find a user with a particular id', (done) => {
+  xit('Find a user with a particular id', (done) => {
     User.findOne({ _id: joe._id })
       .then((user) => {
         assert(user.name === 'Joe');

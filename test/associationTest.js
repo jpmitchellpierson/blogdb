@@ -35,7 +35,7 @@ describe('Associations', () => {
       });
   });
 
-  it('saves a full relation graph', (done) => {
+  xit('saves a full relation graph', (done) => {
     User.findOne({ name: 'Joe' })
       .populate({
         // inside the user found in the collection, find blogPosts property 
