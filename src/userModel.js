@@ -12,7 +12,7 @@ const UserSchema = new Schema({
     required: [true, 'Name is required']
   },
   // posts property for embedded document example only
-  posts: [PostSchema],
+  // posts: [PostSchema],
   likes: Number,
   blogPosts: [{
     type: Schema.Types.ObjectId,
@@ -25,7 +25,7 @@ UserSchema.virtual('postCount').get(function() {
 });
 
 UserSchema.pre('remove', function(next) {
-  //reason for no arrow function
+  // reason for no arrow function
   // this refers to model instance, in this case this === joe
   const BlogPost = mongoose.model('blogPost');
   
